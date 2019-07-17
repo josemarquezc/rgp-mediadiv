@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>RGP</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <a class="navbar-brand" href="#"> <img class="img-fluid" src="img/logo-fiscalia.png"></a>
+                <button type="button" id="sidebarCollapse" class="btn-menu btn btn-info">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#" data-toggle="collapse" aria-expanded="false">
+                        <i class="fas fa-home"></i>
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="#panelesSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-copy"></i>
+                        Paneles
+                    </a>
+                    <ul class="collapse list-unstyled" id="panelesSubmenu">
+                        <li>
+                            <a href="#">bandeja1</a>
+                        </li>
+                        <li>
+                            <a href="#">bandeja2</a>
+                        </li>
+                        <li>
+                            <a href="#">bandeja3</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#atSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-laptop"></i>
+                        Áreas de Trabajo
+                    </a>
+                    <ul class="collapse list-unstyled" id="atSubmenu">
+                        <li>
+                            <a href="#">Escritorio Digitador</a>
+                        </li>
+                        <li>
+                            <a href="#">Escritorio Atendedor Jurídico</a>
+                        </li>
+                        <li>
+                            <a href="#">Escritorio Preclasificador</a>
+                        </li>
+                        <li>
+                            <a href="#">Escritorio Fiscal</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#orgSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-sitemap"></i>
+                        Organización
+                    </a>
+                    <ul class="collapse list-unstyled" id="orgSubmenu">
+                        <li>
+                            <a href="#">organizacion</a>
+                        </li>
+                        <li>
+                            <a href="#">organizacion</a>
+                        </li>
+                        <li>
+                            <a href="#">organizacion</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="fecha">
+                <p>Miércoles, 17 de Julio 2019</p>
+                <p>14:00 hrs.</p>
+            </div>
+
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2 search-box" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0 btn-icon" type="submit"> <i class="fa fa-search"></i></button>
+                        </form>          
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#"><button class="btn btn-outline-success my-2 my-sm-0 btn-icon" type="submit"><i class="fa fa-clock"></i></button></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><button class="btn btn-outline-success my-2 my-sm-0 btn-icon" type="submit"><i class="fas fa-plus-circle"></i></button></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><button class="btn btn-outline-success my-2 my-sm-0 btn-icon" type="submit"><i class="fas fa-bell"></i></button></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><button class="btn btn-outline-success my-2 my-sm-0 btn-icon" type="submit"><i class="fas fa-question-circle"></i></button></a>
+                            </li>
+                        </ul>
+                        <div class="login-box dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="circle-name"><p>XR</p></div>
+                                <h5>Ximena Rodríguez</h5>
+                                <h6>Fiscal</h6>
+                                <p>Fiscalía Centro Norte</p>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Mi Perfil</a>
+                                <a class="dropdown-item" href="#">Configuración</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Cerrar Sesión</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+
+            <div class="title-box">
+             <p>Áreas de Trabajo > Escritorio de Atendedor Jurídico</p>   
+            </div>
+
+            <div class="btn-group btn-group-toggle m-context" data-toggle="buttons">
+                  <label class="btn btn-secondary active">
+                    <i class="fas fa-plus-circle"></i>
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Nuevo
+                  </label>
+                  <label class="btn btn-secondary">
+                    <i class="fas fa-save"></i>
+                    <input type="radio" name="options" id="option2" autocomplete="off"> Guardar
+                  </label>
+                  <label class="btn btn-secondary">
+                    <i class="fas fa-sync-alt"></i>
+                    <input type="radio" name="options" id="option3" autocomplete="off"> Actualizar
+                  </label>
+                  <label class="btn btn-secondary">
+                    <i class="fas fa-cloud-download-alt"></i>
+                    <input type="radio" name="options" id="option3" autocomplete="off"> Exportar
+                  </label>
+                  <label class="btn btn-secondary">
+                    <i class="fas fa-user-plus"></i>
+                    <input type="radio" name="options" id="option3" autocomplete="off"> Asignar
+                  </label>
+                  <label class="btn btn-secondary">
+                    <i class="fas fa-file-alt"></i>
+                    <input type="radio" name="options" id="option3" autocomplete="off"> Plantilla
+                  </label>
+            </div>
+
+
+            <div class="buscadores">
+                <form class="form-inline my-2 my-lg-0">
+                       <input class="form-control mr-sm-2 search-box" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0 btn-icon" type="submit"> <i class="fa fa-search"></i></button>
+                </form>
+
+                <form class="form-inline my-2 my-lg-0 date">
+                        <input class="form-control mr-sm-2 search-box" type="search" placeholder="dd/mm/aaaa" aria-label="Search">
+                        <input class="form-control mr-sm-2 search-box" type="search" placeholder="dd/mm/aaaa" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0 btn-icon" type="submit"> <i class="fa fa-search"></i></button>
+                </form>
+            </div>
+
+            <section>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col"> 
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1"></label>
+                      </th>
+                      <th scope="col">Código Atención</th>
+                      <th scope="col">Código Tarea</th>
+                      <th scope="col">Nombre Tarea</th>
+                      <th scope="col">Run Denunciante</th>
+                      <th scope="col">Alerta</th>
+                      <th scope="col">Fecha/Hora Ingreso</th>
+                      <th scope="col">Fecha Asignación</th>
+                      <th scope="col">Estado Tarea</th>
+                      <th scope="col">Fecha Ultimo Mov.</th>
+                      <th scope="col">T. Asignado (hrs)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1"></label>
+                      </th>
+                      <td>1907010512015</td>
+                      <td>127145</td>
+                      <td>Recibir Denuncia</td>
+                      <td>10.918.482-1 </td>
+                      <td> icono </td>
+                      <td>01/07/2019 10:55</td>
+                      <td> 01/11/2018 </td>
+                      <td>icono</td>
+                      <td>03/9/2017</td>
+                      <td>1</td>
+
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1"></label>
+                      </th>
+                      <td>1907020512034</td>
+                      <td>127256</td>
+                      <td>Recibir Denuncia</td>
+                      <td>14.512.276-2</td>
+                      <td>icono</td>
+                      <td>02/07/2019 09:45</td>
+                      <td>21/02/2019</td>
+                      <td>icono</td>
+                      <td>01/11/2018</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1"></label>
+                      </th>
+                      <td>1907020512003 </td>
+                      <td>127267</td>
+                      <td>Recibir Denuncia</td>
+                      <td>21.937.342-6</td>
+                      <td>icono</td>
+                      <td>02/07/2019 09:45</td>
+                      <td>01/07/2019</td>
+                      <td>icono</td>
+                      <td>01/07/2018</td>
+                      <td>1</td>
+                    </tr>
+                  </tbody>
+
+                </table>
+            </section>
+
+            
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="style.js"></script>
+
+</body>
+
+</html>
